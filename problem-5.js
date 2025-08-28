@@ -1,3 +1,8 @@
-const numbers = [1, 2, 3, 9, 33, 20];
-let maxNumber = Math.max(...numbers);
-console.log(maxNumber);
+
+let numbers = [1, 2, 2, 3, 4, 4];
+
+function removeDuplicates(arr) {
+  return [...new Set(arr)];
+}
+
+console.log(removeDuplicates(numbers));
